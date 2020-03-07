@@ -10,10 +10,10 @@ class Receipt {
         print(storeName, adress, phoneNumber)
     }
     func date() {
-        let neko = DateFormatter()
-        neko.timeZone = .current
-        neko.dateFormat = " yyyy-MM-dd HH:mm:ss"
-        let dateString = neko.string(from:currentDate)
+        let format = DateFormatter()
+        format.timeZone = .current
+        format.dateFormat = " yyyy-MM-dd HH:mm:ss"
+        let dateString = format.string(from:currentDate)
         print(dateString)
     }
 }
